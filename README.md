@@ -1,3 +1,3 @@
-# Team P4P – Frontend Repository
+# TSI Team 4 – Frontend Repository
 
-This is the frontend repository of the event management application for the <a href="https://passionforparkinsons.org/">Passion for Parkinson's Foundation</a>.
+This is the frontend repository of the Western Sales Club Website.
