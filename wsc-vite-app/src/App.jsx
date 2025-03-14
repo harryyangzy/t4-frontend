@@ -1,34 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="flex flex-col min-h-screen">
+
+      {/* HEADER */}
+      <header className="fixed top-0 left-0 w-full z-50 text-white bg-black">
+        <div className="px-20 py-12 flex items-center justify-between">
+          <a href="/" className="text-lg font-bold">Western Sales Club</a>
+          <nav>
+            <ul className="flex space-x-6">
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/executive-team">Executive Team</a></li>
+              <li><a href="/events">Events</a></li>
+              <li><a href="/contact-us">Contact Us</a></li>
+              <li><a href="/sponsors">Sponsors</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className="flex flex-col items-center justify-center h-96">
+          <h3 className="text-2xl">Welcome to</h3>
+          <h1 className="text-5xl font-bold">Western's Sales Community</h1>
+        </div>
+      </header>
+
+      {/* MAIN
+          flex-grow pushes the footer down. 
+          pt-[384px] (24rem) offsets the fixed header’s total height 
+          (12rem from the nav + 24rem hero = 36rem, adjust as needed).
+      */}
+      <main className="flex-grow pt-[384px] px-4">
+        
+      </main>
+
+      {/* FOOTER */}
+      <footer className="bg-black text-white py-12 text-center">
+        <p>&copy; {new Date().getFullYear()} Western Sales Club. All rights reserved.</p>
+      </footer>
+    </div>
   )
 }
 
