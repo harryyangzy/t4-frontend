@@ -5,7 +5,7 @@ function Nav() {
     return (
       <header className="fixed top-0 left-0 w-full z-50 text-white bg-black">
         <div className="px-20 py-12 flex items-center justify-between">
-            <a href="/" className="text-lg font-bold">Western Sales Club</a>
+            <a href="/" className="text-2xl font-bold">Western Sales Club</a>
             <nav>
             <ul className="flex space-x-6">
                 <li><Link to="/about">About Us</Link></li>
