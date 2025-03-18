@@ -70,6 +70,11 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.aboutTitle {
+  text-align: left;
+  color: #ffd95a;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color: #f9f9f9;
