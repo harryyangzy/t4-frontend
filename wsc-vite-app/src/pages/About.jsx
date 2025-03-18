@@ -9,6 +9,7 @@ function About() {
             <div>
                 <h1 className="">About Us</h1>
             </div>
+            {/* Hello this is Harry */}
             <div className = "justify-center w-[800px]">
             <hr className="border-t-2 border-gold my-10" />
                 <h3 class = "aboutTitle">Mission</h3>
